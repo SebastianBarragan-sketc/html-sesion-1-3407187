@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+        /* DECLARAR FUENTES */
+        @font-face{
+            font-family:'inter';
+            src: url('inter/Inter.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+
+        }
+
+        @font-face{
+            font-family:'inter';
+            src: url('inter/Inter.ttf') format('truetype');
+            font-style: bold;
+            font-weight: 700;
+            font-display: swap;
+
+        }
+
+
         *{
             margin: 0px;
             padding: 0px;
@@ -12,6 +33,7 @@
 
         body{
             background-color: #adadad;
+            font-family: 'inter', sans-serif;
         }
 
         .card{
@@ -30,7 +52,7 @@
         }
 
         .card__flag{
-            background-color: #9b9b9b;
+            background-color: #69b8b4;
             display: block;
             width: auto;
             height: 50px;
@@ -47,13 +69,70 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .card__nombre{
+            text-align: center;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+
+        .card__nombre--negrita{
+            font-weight: bold;
+
+        }
+
+        .card__profesion{
+            text-align: center;
+            color: #7acbc7;
+            font-size: 8px;
+            letter-spacing: 2px;
+        }
+
+        .card__table{
+            display: block;
+            width: 55%;
+            height: auto;
+            margin: 20px auto;
+            font-size: 8px;
+        }
+
+        .card__table--celda{
+            padding-bottom: 5px;
+            padding-right: 10px;
+        }
+
+        .card__table--atributo{
+            font-weight: bold;
+            color: #7acbc7;
+        }
+
     </style>
 </head>
 <body>
     <div class="card">
         <div class="card__company"></div>
-        <diV class="card__flag"></diV>
-        <img class="card__image" src="" alt="">
+        <div class="card__flag"></diV>
+        <img class="card__image" src="persona.png" alt="">
+        <p class="card__nombre">    
+            Sebastian <span class="card__nombre--negrita">Barragan</span>
+        </p>
+        <p class="card__profesion">
+            Web Design & developer
+        </p>
+        <table class="card__table">
+            <tr>
+                <td class="card__table--celda card__table--atributo">Documento</td>
+                <td class="card__table--celda">12345567</td>
+            </tr>
+            <tr>
+                <td class="card__table--celda card__table--atributo">Correo</td>
+                <td class="card__table--celda">SebastianBarragan@example.com</td>
+            </tr>
+            <tr>
+                <td class="card__table--celda card__table--atributo">Celular</td>
+                <td class="card__table--celda">123-456-7890</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

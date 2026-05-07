@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<style>
+    /* DECLARAR FUENTES */
+        @font-face{
+            font-family:'inter';
+            src: url('../evidencia/inter/Inter-Italic.ttf') format('truetype');
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+
+        }
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #583db1;
+     font-family: 'inter', sans-serif;
+}
+
+
+.card__naranja{
+    display: block;
+    width: 200px;
+    height: 140px;
+    background-color: #f4a259;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-top: 8px;
+}
+
+.card__image{
+    width: 170px;
+    height: 122px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__gris{
+    width: 200px;
+    height: 160px;
+    background-color: #414141;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -38px;
+    border-radius: 20px;
+    padding-top: 1px;
+}
+
+.card__nombre{
+    background-color: #414141;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.card__profesion{
+    background-color: #414141;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.card__boton{
+    display: block;
+    width: 70px;
+    height: 30px;
+    background-color: #f7a35c;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="card__naranja">
+        <img class="card__image" src="imagen.webp" alt=""></div>
+    <div class="card__gris">
+        <div class="card__nombre">Sebastian Barragan</div>
+        <div class="card__profesion">Software engineer with a knack for problem-solving.</div>
+        <div class="card__boton"> Follow</div>
+</div>
+</body>
+</html>
